@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14324" started-at="2021-07-11T10:24:20 UTC" finished-at="2021-07-11T10:24:34 UTC">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="14324" started-at="2021-07-11T10:24:20 UTC" finished-at="2021-07-11T10:24:34 UTC">
+      <class name="com.herokuapp.theinternet.PostiveTests">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.herokuapp.theinternet.PostiveTests@1e965684]" name="loginTest" duration-ms="14265" started-at="2021-07-11T10:24:20 UTC" finished-at="2021-07-11T10:24:34 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- com.herokuapp.theinternet.PostiveTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
