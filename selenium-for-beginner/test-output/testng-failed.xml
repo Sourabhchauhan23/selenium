@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AllTest]">
+  <test thread-count="5" name="PostiveTests(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="smoke-testing"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.herokuapp.theinternet.LoginTest">
+        <methods>
+          <include name="loginTest1"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.LoginTest -->
+    </classes>
+  </test> <!-- PostiveTests(failed) -->
+  <test thread-count="5" name="incorrectpassword(failed)">
+    <parameter name="password" value="incorrectpassword"/>
+    <parameter name="expectedmessage" value="Your password is invalid!"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="username" value="tomsmith"/>
+    <classes>
+      <class name="com.herokuapp.theinternet.LoginTest">
+        <methods>
+          <include name="negativeLoginTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.LoginTest -->
+    </classes>
+  </test> <!-- incorrectpassword(failed) -->
+  <test thread-count="5" name="incorrectusername(failed)">
+    <parameter name="password" value="SuperSecretPassword!"/>
+    <parameter name="expectedmessage" value="Your username is invalid!"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="username" value="incorrectusername"/>
+    <classes>
+      <class name="com.herokuapp.theinternet.LoginTest">
+        <methods>
+          <include name="negativeLoginTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.LoginTest -->
+    </classes>
+  </test> <!-- incorrectusername(failed) -->
+</suite> <!-- Failed suite [AllTest] -->
