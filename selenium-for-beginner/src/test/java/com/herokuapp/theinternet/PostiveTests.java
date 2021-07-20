@@ -1,26 +1,18 @@
 package com.herokuapp.theinternet;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class PostiveTests {
+import com.herokuapp.theinternet.base.BaseTest;
+
+public class PostiveTests extends BaseTest {
 	@Test(priority = 1, groups = {"smoke-testing"})
 	public void loginTest() {
 		
-		System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
-		
 		String url="https://the-internet.herokuapp.com/login";
 		driver.get(url);
-		
-		
-		sleep(3000);
-		
-		driver.manage().window().maximize();
 		
 		WebElement username = driver.findElement(By.id("username"));
 		WebElement password = driver.findElement(By.id("password"));
@@ -46,11 +38,6 @@ public class PostiveTests {
 		Assert.assertTrue(logoutButton.isDisplayed(), "Logout button is not visible");
 		
 		logoutButton.click();
-		
-		sleep(2000);
-		
-		driver.close();
-		driver.quit();
 		
 	}
 
