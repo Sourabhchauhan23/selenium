@@ -3,6 +3,7 @@
 <suite name="NegativeTestSuite" verbose="1">
 
 	<test name="incorrectpassword">
+		<parameter name="browser" value="firefox" />
 		<parameter name="username" value="tomsmith" />
 		<parameter name="password" value="incorrectpassword" />
 		<parameter name="expectedmessage"
@@ -17,6 +18,7 @@
 	</test>
 
 	<test name="incorrectusername">
+		<parameter name="browser" value="chrome" />
 		<parameter name="username" value="incorrectusername" />
 		<parameter name="password" value="SuperSecretPassword!" />
 		<parameter name="expectedmessage"
@@ -29,5 +31,5 @@
 			</class>
 		</classes>
 	</test>
-	
+
 </suite>
