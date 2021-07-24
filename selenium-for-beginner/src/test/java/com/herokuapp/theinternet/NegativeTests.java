@@ -16,6 +16,8 @@ public class NegativeTests extends TestUtility {
 
 		String url = "https://the-internet.herokuapp.com/login";
 		driver.get(url);
+		
+		log.info("test start");
 
 		WebElement username = driver.findElement(By.id("username"));
 		WebElement password = driver.findElement(By.id("password"));
@@ -35,6 +37,8 @@ public class NegativeTests extends TestUtility {
 		String expectedAlter = "Your username is invalid!";
 
 		Assert.assertTrue(actualAlter.contains(expectedAlter), "Test case is fail");
+		
+		log.info("test complete");
 
 	}
 
@@ -43,6 +47,8 @@ public class NegativeTests extends TestUtility {
 
 		String url = "https://the-internet.herokuapp.com/login";
 		driver.get(url);
+		
+		log.info("test start");
 
 		WebElement username = driver.findElement(By.id("username"));
 		WebElement password = driver.findElement(By.id("password"));
@@ -62,6 +68,8 @@ public class NegativeTests extends TestUtility {
 		String expectedAlter = "Your password is invalid!";
 
 		Assert.assertTrue(actualAlter.contains(expectedAlter), "Test case is fail");
+		
+		log.info("test complete");
 
 	}
 

@@ -8,7 +8,9 @@
     <classes>
       <class name="com.herokuapp.theinternet.NegativeTests">
         <methods>
-          <include name="negativeLoginTest" invocation-numbers="0"/>
+          <include name="negativeLoginTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- com.herokuapp.theinternet.NegativeTests -->
     </classes>
@@ -20,7 +22,9 @@
     <classes>
       <class name="com.herokuapp.theinternet.NegativeTests">
         <methods>
-          <include name="negativeLoginTest" invocation-numbers="0"/>
+          <include name="negativeLoginTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- com.herokuapp.theinternet.NegativeTests -->
     </classes>

@@ -13,6 +13,8 @@ public class PostiveTests extends TestUtility {
 
 		String url = "https://the-internet.herokuapp.com/login";
 		driver.get(url);
+		
+		log.info("test start");
 
 		WebElement username = driver.findElement(By.id("username"));
 		WebElement password = driver.findElement(By.id("password"));
@@ -35,6 +37,7 @@ public class PostiveTests extends TestUtility {
 		Assert.assertTrue(logoutButton.isDisplayed(), "Logout button is not visible");
 
 		logoutButton.click();
-
+		
+		log.info("test complete");
 	}
 }
